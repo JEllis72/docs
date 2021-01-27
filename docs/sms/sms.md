@@ -1,5 +1,5 @@
 ---
-title: Getting started - node
+title: Getting started - Node
 excerpt: Learn how to quickly send SMS messages with the Sinch API
 ---
 In this guide, we show you how to:
@@ -20,8 +20,8 @@ To use the number with the rest API select REST and click **GET FREE TEST NUMBER
 
 ### Send SMS
 
-```nodejs NodeJS
-//Create a new node app and copy this into app.js
+```Nodejs NodeJS
+//Create a new Node app and copy this into app.js
 var request = require("request");
 var options = {
   method: 'POST',
@@ -85,7 +85,7 @@ To see the data we send on incoming SMS, refresh your request bin page.
 
 ### How to handle incoming SMS with Node.js
 
-Create a new node app and paste this into app.js
+Create a new Node app and paste this into app.js
 
 ```javascript
 const url = require("url");
@@ -105,13 +105,13 @@ server.listen(3000);
 
 Before you can handle incoming traffic to your local server, you need to open up a tunnel to your local server. For that, you can use [ngrok](https://ngrok.com/) tunnel. Open a terminal/command prompt and type: `ngrok http 3000`
 
-Copy the https address in your window, then run app.js in the command prompt 'node app.js'
+Copy the https address in your window, then run app.js in the command prompt 'Node app.js'
 
 ![requestbin request](images\ngrok.png)
 
 Go back to your dashboard and change the callback URL for your SMS service.
 
-1. In the terminal windows, start the app.js `node app.js`
+1. In the terminal windows, start the app.js `Node app.js`
 2. Send an SMS to your Sinch Number.
 3. You will now see the request come in.
 
